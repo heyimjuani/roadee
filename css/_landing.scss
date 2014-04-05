@@ -1,0 +1,58 @@
+body.landing {
+	#hero{
+		padding-top: 0;
+    position: relative;
+
+		header {
+			background: none;
+			box-shadow: none;
+			padding: 30px 40px;
+      position: absolute;
+
+			#logo {
+				color: #fff;
+			}
+      li {
+        margin-left: 15px;
+        a {
+          width: 30px;
+          height: 30px;
+          background: #fff;
+          border-radius: 50%;
+          opacity: .5;
+          &:hover {
+            opacity: 1;
+          }
+          &.fa-facebook:before {
+            position: relative;
+            left: -4px;
+            top: -1px;
+          }
+          &.fa-twitter:before {
+            position: relative;
+            left: -7px;
+            top: -2px;
+          }
+        }
+      }
+		}
+		h1 span {
+			color: rgba(0,0,0,.5);
+		}
+
+		article {
+
+      .btn-more {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+      }
+			input {
+				width: 400px;
+			}
+		}
+	}
+}
