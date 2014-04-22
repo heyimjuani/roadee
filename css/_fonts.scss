@@ -6,7 +6,8 @@
   font-style: normal;
 }
 
-[class*=fa] {
+[class*=fa]:before,
+[class*=fa]:after {
   display: inline-block;
   font-family: FontAwesome;
   font-style: normal;

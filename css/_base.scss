@@ -28,3 +28,65 @@ body {
 	-webkit-font-smoothing: antialiased;
 	color: #5b5b5f;
 }
+.dropdown {
+  background: #fff;
+  border-radius: 3px;
+  width: 200px;
+  position: absolute;
+  border: 1px solid mix($blue, #fff, 20%);
+  margin: 0;
+  padding: 5px 10px;
+  z-index: 1000;
+  display: none;
+
+  &:before {
+    content: "";
+    position: absolute;
+    border: 7px solid transparent;
+    border-right: 7px solid #fff;
+    right: 100%;
+    top: 100%;
+    margin: -25px 0 0 0;
+  }
+
+  li {
+    padding: 0;
+    list-style: none;
+
+    a {
+      color: darken($blue, 30%);
+      text-decoration: none;
+      display: block;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+}
+
+footer {
+  background: #002e3d;
+  
+  nav {
+    padding: 20px 40px;
+    @include display-flex;
+    @include flex-props(row wrap, space-between, center, center);
+    a {
+      text-decoration: none;
+      color: #fff;
+
+      &.logo {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+    }
+    li {
+      display: inline-block;
+      list-style: none;
+      margin-left: 25px;
+    }
+  }
+
+
+}

@@ -36,5 +36,23 @@
 	font-size: .75em;
 	font-weight: bold;
 	letter-spacing: 1px;
-	padding: 10px 15px;
+	position: absolute;
+	  bottom: 40px;
+	  left: 50%;
+	  transform: translateX(-50%);
+	  -moz-transform: translateX(-50%);
+	  -webkit-transform: translateX(-50%);
+	  padding: 7px 15px;
+}
+
+.btn-big {
+	padding: 10px 20px;
+	font-size: 1.25em;
+
+	&:before {
+		color: rgba(0,0,0,.3);
+		margin-right: 10px;
+		position: relative;
+		top: 1px;
+	}
 }

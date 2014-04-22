@@ -12,6 +12,10 @@ body.landing {
 			#logo {
 				color: #fff;
 			}
+      ul {
+        padding: 0;
+        margin: 0;
+      }
       li {
         margin-left: 15px;
         a {
@@ -26,12 +30,12 @@ body.landing {
           &.fa-facebook:before {
             position: relative;
             left: -4px;
-            top: -1px;
+            top: -6px;
           }
           &.fa-twitter:before {
             position: relative;
             left: -7px;
-            top: -2px;
+            top: -7px;
           }
         }
       }
@@ -39,20 +43,24 @@ body.landing {
 		h1 span {
 			color: rgba(0,0,0,.5);
 		}
-
 		article {
-
-      .btn-more {
-        position: absolute;
-        bottom: 40px;
-        left: 50%;
-        transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-      }
 			input {
-				width: 400px;
+				width: 420px;
 			}
+      .success {
+        display: none;
+      }
+      &.sent .success {
+        display: block;
+      }
+      &.sent .normal {
+        display: none;
+      }
 		}
 	}
+  .twitter-follow-button {
+    top: 8px;
+    position: relative;
+    margin-left: 10px;
+  }
 }

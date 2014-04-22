@@ -7,6 +7,11 @@
 	@include display-flex;
 	@include flex-props(row wrap, center, center, center);
 
+	.toggle-nav {
+		display: none;
+		color: darken($blue, 20%);
+	}
+
 	header {
 		position: fixed;
 		background: #fff;

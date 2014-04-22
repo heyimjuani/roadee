@@ -1,3 +1,203 @@
-@media (max-width: 780px) {
- /* do stuff */
+@media (max-width: 700px) {
+.home .btn-more { display: none; }
+  #hero {
+    height: auto;
+    display: block;
+    text-align: center;
+    min-height: 1px;
+
+    .toggle-nav {
+      display: block;
+    }
+
+    article {
+      padding: 2em 20px;
+
+      button {
+        width: 100%;
+        margin: 0;
+      }
+      input {
+        width: 100% !important;
+        margin: 0 0 1em;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 1.75em;
+      }
+
+      .tagline {
+        font-size: 1.25em;
+        line-height: 1.4em;
+        padding: 0 20px;
+        margin: 5px 0 30px;
+      }
+    }
+  }
+  body.single #vehicle-content article {
+    padding: 10px 20px;
+     aside {
+      float: none;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  body.landing:not(.single) {
+  	#hero {
+
+  	 	header {
+  	 		display: block;
+  	 		position: static !important;
+  	 		padding: 30px 20px !important;
+
+  	 		nav {
+  	 			text-align: center;
+
+  	 			#logo {
+  	 				font-size: 1.75em;
+  	 			}
+
+  	 			ul {
+  	 				margin: 0;
+  	 				padding: 0;
+  	 			}
+  	 		}
+  	 	}
+
+  	 	.btn-more {
+  	 		position: static;
+  	 		bottom: auto;
+  	 		left: auto;
+  	 		transform: translateX(0);
+  	 		-moz-transform: translateX(0);
+  	 		-webkit-transform: translateX(0);
+  	 		margin: 0 auto 30px;
+  	 		text-align: center;
+  	 	}
+  	}
+  }
+  .explanation {
+  	display: block;
+  	padding: 20px;
+
+  	img {
+  		width: 200px;
+  		margin: 0 auto 1em;
+  	}
+
+  	h3 {
+  		font-size: 1.15em;
+  		margin: 0;
+  	}
+  	p {
+  		font-size: .9em;
+  		line-height: 1.5em;
+  		margin-top: .5em;
+  	}
+  }
+  [class*=col-] {
+  	display: block;
+  	width: 100%;
+  	padding: 0;
+  }
+  #samples {
+    padding: 20px;
+    h2 {
+      font-size: 1.5em;
+    }
+    ul {
+      display: block;
+
+      li {
+        width: 100%;
+        margin-bottom: 1em;
+
+        img {
+          width: 75%;
+          max-width: 250px;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+  }
+  .home #hero {
+    
+    header {
+      padding: 1em 20px;
+    }
+    #logo {
+      font-size: 2em;
+      color: $orange;
+    }
+
+    nav {
+
+      ul {
+        display: none;
+      }
+
+      &.active ul {
+        display: block;
+        width: 100%;
+        padding: 1em 0 0 0;
+        margin: 0;
+
+        li {
+          display: block;
+          float: none;
+          margin-bottom: .5em;
+
+          a {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  body.landing.single #hero {
+    height: auto;
+    max-height: 10000px;
+    .info {
+      display: block;
+      text-align: center;
+      padding: 80px 0 0 0;
+
+      .text {
+        text-align: center;
+        padding: 20px;
+
+        h1 {
+          font-size: 2em;
+          line-height: 1em;
+          margin: 5px 0;
+        }
+
+        ul {
+          color: #fff;
+          opacity: .7;
+          margin: 0;
+        }
+        .btn-secondary {
+          margin: 20px auto 0;
+        }
+      }
+    }
+  }
+  body.landing.single #vehicle-content {
+    padding-top: 10px;
+
+    .tabbed {
+      padding: 0;
+      text-align: center;
+      li {
+        font-size: .75em;
+        padding: 5px 10px;
+      }
+    }
+  }
 }
